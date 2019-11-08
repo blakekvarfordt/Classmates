@@ -12,7 +12,7 @@ class PersonController {
     
     static let shared = PersonController()
     
-    var people: [Person] = []
+    var people = [Person]()
     
     func createPerson(name: String) {
         let person = Person(name: name)
