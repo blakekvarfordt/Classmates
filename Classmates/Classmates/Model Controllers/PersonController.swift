@@ -12,6 +12,8 @@ class PersonController {
     
     static let shared = PersonController()
     
+    var groups = [[Person]]()
+    
     var people = [Person]()
     
     func createPerson(name: String) {
