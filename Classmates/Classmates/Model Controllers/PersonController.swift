@@ -22,6 +22,10 @@ class PersonController {
         saveData()
     }
     
+    func sortPeople() {
+        
+    }
+    
     func deletePerson(person: Person) {
         guard let personIndex = people.firstIndex(of: person) else { return }
         people.remove(at: personIndex)

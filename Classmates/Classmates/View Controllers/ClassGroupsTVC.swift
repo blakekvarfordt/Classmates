@@ -27,13 +27,7 @@ class ClassGroupsTVC: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-
-        if PersonController.shared.people.count % 2 == 0 {
-            return PersonController.shared.people.count / 2
-        } else {
-            return (PersonController.shared.people.count + 1) / 2
-        }
-
+        return PersonController.shared.groups.count
     }
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Group"
